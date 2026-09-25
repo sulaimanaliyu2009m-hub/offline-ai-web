@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: offline-ai-demo
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python server.py
+    envVars:
+      - key: AI_PROVIDER
+        value: cloudflare
+      - key: CLOUDFLARE_CHAT_MODEL
+        value: '@cf/meta/llama-3.1-8b-instruct'
+      - key: COOKIE_SECURE
+        value: '1'
+      - key: CLOUDFLARE_ACCOUNT_ID
+        sync: false
+      - key: CLOUDFLARE_API_TOKEN
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false

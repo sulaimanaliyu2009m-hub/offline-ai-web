@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+models/
+generated/
+.env
+.env.*
+!.env.example
+.otp_secret
+chat.db*
+.admin_password
+backups/
+*.sqlite
+*.sqlite3
+*.db-wal
+*.db-shm
+*.log

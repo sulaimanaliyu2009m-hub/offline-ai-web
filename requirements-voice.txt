@@ -1,0 +1,2 @@
+# Optional local voice transcription. Models download on first use.
+faster-whisper
